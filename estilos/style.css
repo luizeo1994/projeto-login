@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+/* 
+Paleta de Cores 
+Verde: #49a09d
+Lilás: #5f2c82
+*/
+
+/* <img src="imagem/pexels-mehmood-yousafzai-15163601 (1).jpg" alt="pattern biulding">*/
+
+* { /*configurações gerais*/
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #5f2c82;
+    height: 100vh; /*area de visualização*/
+    width: 100vw; /*area de visualização*/
+}
+
+main {
+    position: relative;
+    height: 100vh; /*area de visualização*/
+    width: 100vw; /*area de visualização*/
+}
+
+section#login {
+    position: absolute; /*posicionamento absoluto da tag*/
+    top: 50%; /*posicionamento centralizado da tag*/
+    left: 50%; /*posicionamento centralizado da tag*/
+    transform: translate(-50%, -50%); /*posicionamento centralizado da tag*/
+    background-color: white; /*fundo da tag*/
+    overflow: hidden; /*esconder tudo que tiver fora da borda*/
+    width: 250px; /*area da tag*/
+    height: 500px; /*area da tag*/
+    border-radius: 20px; /*borda da tag*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.466); /* Sombra da Tag*/
+}
+
+section#login > div#imagem {
+    display: block;
+    background: #5f2c82 url(../imagem/pexels-mehmood-yousafzai-15163601\ \(1\).jpg) no-repeat ;
+    background-position: left bottom; /*posicionamento do fundo*/
+    background-size: cover;
+    height: 20%;
+
+}
+
+section#login > div#formulario {
+    display: block; /*display define se é um bloco ou inline*/
+    padding: 10px; 
+
+}
