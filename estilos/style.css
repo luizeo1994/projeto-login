@@ -38,11 +38,13 @@ section#login {
     height: 500px; /*area da tag*/
     border-radius: 20px; /*borda da tag*/
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.466); /* Sombra da Tag*/
+    transition: width 0.3s, height 0.3;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem {
     display: block;
-    background: #5f2c82 url(../imagem/pexels-mehmood-yousafzai-15163601\ \(1\).jpg) no-repeat ;
+    background: #5f2c82 url(../imagem/pexels-mehmood-yousafzai-15163601\ \(1\).jpg) no-repeat;
     background-position: left bottom; /*posicionamento do fundo*/
     background-size: cover;
     height: 20%;
@@ -52,5 +54,4 @@ section#login > div#imagem {
 section#login > div#formulario {
     display: block; /*display define se é um bloco ou inline*/
     padding: 10px; 
-
 }
