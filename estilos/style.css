@@ -39,9 +39,10 @@ section#login {
     border-radius: 20px; /*borda da tag*/
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.466); /* Sombra da Tag*/
     
-    transform: translate(-50%, -50%); /*posicionamento centralizado da tag*/
+   
     transition: width .3s, height .3s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%); /*sempre como ultima linha do seletor*/ /*posicionamento centralizado da tag*/
     
 }
 
@@ -96,10 +97,11 @@ div.campo > input {
     font-size: 1em;
     width: calc(100% - 45px);
     height: 99%;
-    transform: translateY(-10px);
+    
     border: 0px;
     border-radius: 8px;
     padding: 4px;
+    transform: translateY(-10px); /*sempre como ultima linha do seletor*/
 }
 
 div.campo > input:focus-within {
