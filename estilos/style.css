@@ -55,3 +55,23 @@ section#login > div#formulario {
     display: block; /*display define se é um bloco ou inline*/
     padding: 10px; 
 }
+
+
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p{
+    font-size: 0.8em;
+}
+
+.campo{
+    background-color: #5f2c82;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.input{
+    position: absolute;
+}
