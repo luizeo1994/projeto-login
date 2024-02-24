@@ -31,20 +31,24 @@ section#login {
     position: absolute; /*posicionamento absoluto da tag*/
     top: 50%; /*posicionamento centralizado da tag*/
     left: 50%; /*posicionamento centralizado da tag*/
-    transform: translate(-50%, -50%); /*posicionamento centralizado da tag*/
-    background-color: white; /*fundo da tag*/
     overflow: hidden; /*esconder tudo que tiver fora da borda*/
+
+    background-color: white; /*fundo da tag*/
     width: 250px; /*area da tag*/
     height: 515px; /*area da tag*/
     border-radius: 20px; /*borda da tag*/
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.466); /* Sombra da Tag*/
-    transition: width 0.3s, height 0.3;
+    
+    transform: translate(-50%, -50%); /*posicionamento centralizado da tag*/
+    transition: width .3s, height .3s;
     transition-timing-function: ease;
+    
 }
 
 section#login > div#imagem {
     display: block;
     background: #5f2c82 url(../imagem/pexels-mehmood-yousafzai-15163601\ \(1\).jpg) no-repeat;
+    
     background-position: left bottom; /*posicionamento do fundo*/
     background-size: cover;
     height: 200px;
@@ -62,24 +66,48 @@ div#formulario > h1 {
     margin-bottom: 10px;
 }
 
-div#formulario > p{
+div#formulario > p {
     font-size: 0.8em;
 }
 
-form > div.campo{
+form > div.campo {
     background-color: #5f2c82;
+    border: 2px solid #5f2c82;
     display: block;
     width: 100%;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
 }
 
-div.campo > label{
+div.campo > label {
     display: none;
 }
 
-form > input[type=submit]{
+div.campo > span {
+    color: white;
+    font-size: 1.9em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #49a09d;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 99%;
+    transform: translateY(-10px);
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+    border: none;
+}
+
+form > input[type=submit] {
     display: block;
     font-size: 1em;
     width: 100%; /*% é a largura do container (vw é a da tela) px são com quantos pixels */
