@@ -101,7 +101,7 @@ div.campo > input {
     border: 0px;
     border-radius: 8px;
     padding: 4px;
-    transform: translateY(-10px); /*sempre como ultima linha do seletor*/
+    transform: translateY(-12px); /*sempre como ultima linha do seletor*/
 }
 
 div.campo > input:focus-within {
